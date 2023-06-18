@@ -6,11 +6,17 @@ function App() {
 
   return (
     <>
-      권예준 페이지 입니다.
       <div id="container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+
+        <div>안녕하세요 반갑습니다.</div>
+        <div>바밤바
+          바 : 바밤바
+          밤 : 밤맛나는
+          바 : 바밤바</div>
+        <div>누가바
+          누 : 누가바
+          가 : 가까이서보니
+          바 : 바밤바</div>
       </div>
     </>
   );
