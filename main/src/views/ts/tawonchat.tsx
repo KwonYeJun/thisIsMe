@@ -1,166 +1,75 @@
-import { ResponsivePie } from '@nivo/pie'
+import { ResponsiveRadar } from '@nivo/radar'
 import React from 'react';
 
 const Tawonechat = () => {
-  const data = [
+ const data = [
     {
-      "id": "erlang",
-      "label": "erlang",
-      "value": 31,
-      "color": "hsl(43, 70%, 50%)"
+      "taste": "fruity",
+      "chardonay": 117,
+      "carmenere": 68,
+      "syrah": 91
     },
     {
-      "id": "hack",
-      "label": "hack",
-      "value": 163,
-      "color": "hsl(348, 70%, 50%)"
+      "taste": "bitter",
+      "chardonay": 74,
+      "carmenere": 118,
+      "syrah": 24
     },
     {
-      "id": "sass",
-      "label": "sass",
-      "value": 315,
-      "color": "hsl(237, 70%, 50%)"
+      "taste": "heavy",
+      "chardonay": 88,
+      "carmenere": 56,
+      "syrah": 46
     },
     {
-      "id": "css",
-      "label": "css",
-      "value": 318,
-      "color": "hsl(193, 70%, 50%)"
+      "taste": "strong",
+      "chardonay": 113,
+      "carmenere": 99,
+      "syrah": 45
     },
     {
-      "id": "php",
-      "label": "php",
-      "value": 299,
-      "color": "hsl(359, 70%, 50%)"
+      "taste": "sunny",
+      "chardonay": 119,
+      "carmenere": 107,
+      "syrah": 107
     }
   ]
   return (
-    <ResponsivePie
-      data={data}
-      margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-      innerRadius={0.5}
-      padAngle={0.7}
-      cornerRadius={3}
-      activeOuterRadiusOffset={8}
-      borderWidth={1}
-      borderColor={{
-        from: 'color',
-        modifiers: [
-          [
-            'darker',
-            0.2
-          ]
-        ]
-      }}
-      arcLinkLabelsSkipAngle={10}
-      arcLinkLabelsTextColor="#333333"
-      arcLinkLabelsThickness={2}
-      arcLinkLabelsColor={{ from: 'color' }}
-      arcLabelsSkipAngle={10}
-      arcLabelsTextColor={{
-        from: 'color',
-        modifiers: [
-          [
-            'darker',
-            2
-          ]
-        ]
-      }}
-      defs={[
-        {
-          id: 'dots',
-          type: 'patternDots',
-          background: 'inherit',
-          color: 'rgba(255, 255, 255, 0.3)',
-          size: 4,
-          padding: 1,
-          stagger: true
-        },
-        {
-          id: 'lines',
-          type: 'patternLines',
-          background: 'inherit',
-          color: 'rgba(255, 255, 255, 0.3)',
-          rotation: -45,
-          lineWidth: 6,
-          spacing: 10
-        }
-      ]}
-      fill={[
-        {
-          match: {
-            id: 'ruby'
-          },
-          id: 'dots'
-        },
-        {
-          match: {
-            id: 'c'
-          },
-          id: 'dots'
-        },
-        {
-          match: {
-            id: 'go'
-          },
-          id: 'dots'
-        },
-        {
-          match: {
-            id: 'python'
-          },
-          id: 'dots'
-        },
-        {
-          match: {
-            id: 'scala'
-          },
-          id: 'lines'
-        },
-        {
-          match: {
-            id: 'lisp'
-          },
-          id: 'lines'
-        },
-        {
-          match: {
-            id: 'elixir'
-          },
-          id: 'lines'
-        },
-        {
-          match: {
-            id: 'javascript'
-          },
-          id: 'lines'
-        }
-      ]}
-      legends={[
-        {
-          anchor: 'bottom',
-          direction: 'row',
-          justify: false,
-          translateX: 0,
-          translateY: 56,
-          itemsSpacing: 0,
-          itemWidth: 100,
-          itemHeight: 18,
-          itemTextColor: '#999',
-          itemDirection: 'left-to-right',
-          itemOpacity: 1,
-          symbolSize: 18,
-          symbolShape: 'circle',
-          effects: [
+    <ResponsiveRadar
+        data={data}
+        keys={[ 'chardonay', 'carmenere', 'syrah' ]}
+        indexBy="taste"
+        valueFormat=">-.2f"
+        margin={{ top: 70, right: 80, bottom: 40, left: 80 }}
+        borderColor={{ from: 'color' }}
+        gridLabelOffset={36}
+        dotSize={10}
+        dotColor={{ theme: 'background' }}
+        dotBorderWidth={2}
+        colors={{ scheme: 'nivo' }}
+        blendMode="multiply"
+        motionConfig="wobbly"
+        legends={[
             {
-              on: 'hover',
-              style: {
-                itemTextColor: '#000'
-              }
+                anchor: 'top-left',
+                direction: 'column',
+                translateX: -50,
+                translateY: -40,
+                itemWidth: 80,
+                itemHeight: 20,
+                itemTextColor: '#999',
+                symbolSize: 12,
+                symbolShape: 'circle',
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemTextColor: '#000'
+                        }
+                    }
+                ]
             }
-          ]
-        }
-      ]}
+        ]}
     />
   )
 
