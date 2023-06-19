@@ -31,42 +31,42 @@ const Tawonechat = () => {
   ]
   return (
     <ResponsiveRadar
-        data={data}
-        keys={[ '정성검사']}
-        indexBy="taste"
-        valueFormat=">-.2f"
-        margin={{ top: 70, right: 80, bottom: 45, left: 80 }}
-        borderColor={{ from: 'color' }}
-        gridLabelOffset={20}
-        dotSize={10}
-        dotColor={{ theme: 'background' }}
-        dotBorderWidth={3}
-        colors={{ scheme: 'set3' }}
-        fillOpacity={0.2}
-        blendMode="multiply"
-        motionConfig="wobbly"
-        legends={[
-            {
-                anchor: 'top-left',
-                direction: 'column',
-                translateX: -50,
-                translateY: -40,
-                itemWidth: 80,
-                itemHeight: 20,
-                itemTextColor: '#3B56D3',
-                symbolSize: 12,
-                symbolShape: 'circle',
-                effects: [
-                    {
-                        on: 'hover',
-                        style: {
-                            itemTextColor: '#3B56D3'
-                        }
+    data={data}
+    keys={[ '정성검사']}
+    indexBy="taste"
+    valueFormat=">-.2f"
+    margin={{ top: 70, right: 80, bottom: 40, left: 80 }}
+    borderColor="#f5f5f5"
+    gridShape="linear"
+    gridLabelOffset={15}
+    dotSize={10}
+    dotColor={{ theme: 'background' }}
+    dotBorderWidth={2}
+    colors={{ scheme: 'greys' }}
+    blendMode="lighten"
+    motionConfig="wobbly"
+    legends={[
+        {
+            anchor: 'top-left',
+            direction: 'column',
+            translateX: -50,
+            translateY: -40,
+            itemWidth: 80,
+            itemHeight: 20,
+            itemTextColor: '#999',
+            symbolSize: 12,
+            symbolShape: 'circle',
+            effects: [
+                {
+                    on: 'hover',
+                    style: {
+                        itemTextColor: '#000'
                     }
-                ]
-            }
-        ]}
-    />
+                }
+            ]
+        }
+    ]}
+/>
   )
 
 }
