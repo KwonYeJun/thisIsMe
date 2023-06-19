@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-
+import Name from './views/ts/name'
+import Tawonchat from './views/ts/tawonchat'
 function App() {
 
 
@@ -8,7 +9,10 @@ function App() {
     <>
       <div id="container">
 
-        <div>안녕하세요 반갑습니다.</div>
+        <div>
+          <Name />
+          <Tawonchat />
+        </div>
         <div>바밤바
           바 : 바밤바
           밤 : 밤맛나는

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "erlang",
+    "label": "erlang",
+    "value": 31,
+    "color": "hsl(43, 70%, 50%)"
+  },
+  {
+    "id": "hack",
+    "label": "hack",
+    "value": 163,
+    "color": "hsl(348, 70%, 50%)"
+  },
+  {
+    "id": "sass",
+    "label": "sass",
+    "value": 315,
+    "color": "hsl(237, 70%, 50%)"
+  },
+  {
+    "id": "css",
+    "label": "css",
+    "value": 318,
+    "color": "hsl(193, 70%, 50%)"
+  },
+  {
+    "id": "php",
+    "label": "php",
+    "value": 299,
+    "color": "hsl(359, 70%, 50%)"
+  }
+]
