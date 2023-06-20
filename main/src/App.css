@@ -7,16 +7,18 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('./views/img/blue.jpg');
-  -webkit-filter: blur(5px); 
-  -moz-filter: blur(5px); 
-  -o-filter: blur(5px); 
-  -ms-filter: blur(5px); 
+  width: 100vw; /* 화면 너비에 맞추기 */
+  height: 100vh; /* 화면 높이에 맞추기 */
+  background-image: url('./views/img/rawbow.jpg');
+  background-size: cover; /* 배경 이미지를 화면에 맞게 조정 */
+  background-position: center; /* 배경 이미지를 가운데 정렬 */
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
   filter: blur(5px);
-  z-index: -1; 
-  content: "";;
+  z-index: -1;
+  content: "";
 }
 .test{
   width: 50%;
