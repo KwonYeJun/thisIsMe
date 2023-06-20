@@ -36,9 +36,9 @@ function App() {
           </div>
           <div>  <Name />
             <Tawonchat /></div>
-          <div>누가바
-            누 : 누가바
-            가 : 가까이서보니
+          <div>누가바<br></br>
+            누 : 누가바<br></br>
+            가 : 가까이서보니<br></br>
             바 : 바밤바</div>
         </div>
       </div>
