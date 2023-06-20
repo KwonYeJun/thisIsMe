@@ -3,34 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.3s, color 0.3s;
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./views/img/blue.jpg');
+  -webkit-filter: blur(5px); 
+  -moz-filter: blur(5px); 
+  -o-filter: blur(5px); 
+  -ms-filter: blur(5px); 
+  filter: blur(5px);
+  z-index: -1; 
+  content: "";;
 }
-
-.dark-mode{
-  background-color: #000;
-  color: #fff;
+.test{
+  width: 50%;
+  height: 30%;
 }
 #container{
   width: 100vw;
-  height: 300vh;
+  height: 100vh;
+ 
 }
 #container > :nth-child(1){
   width: 100vw;
   height: 100vh;
 
-}
-#container > :nth-child(2){
-  width: 100vw;
-  height: 100vh;
-    position: relative; /* 위치 지정을 위해 position 속성 추가 */
-  z-index: -1; /* 다른 요소들보다 뒤로 보내기 위해 음수 값으로 설정 */
-  background-image: url('https://i.imgur.com/a3biEuE.jpeg');
-  filter: blur(7px); 
-}
-#container > :nth-child(3){
-  width: 100vw;
-  height: 100vh;
 }

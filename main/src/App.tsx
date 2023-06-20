@@ -23,25 +23,20 @@ function App() {
 
   return (
     <>
-      <div className={`${darkMode ? 'dark-mode' : ''}`}>
         <div id="container">
-
           <div>
             <h1>Welcome to My Website</h1>
             <p>This is some content on my website.</p>
             <button onClick={toggleDarkMode}>
               {darkMode ? 'Light Mode' : 'Dark Mode'}
             </button>
-
+            <Name />
+            <div className="test">
+            <Tawonchat />
+            </div>
           </div>
-          <div>  <Name />
-            <Tawonchat /></div>
-          <div>누가바<br></br>
-            누 : 누가바<br></br>
-            가 : 가까이서보니<br></br>
-            바 : 바밤바</div>
         </div>
-      </div>
+
     </>
   );
 }
