@@ -21,8 +21,10 @@ body::before {
   content: "";
 }
 .test{
-  width: 50%;
+  width: 30%;
   height: 30%;
+  
+  background-color: rgba(70, 71, 72, 0.356);
 }
 #container{
   width: 100vw;
