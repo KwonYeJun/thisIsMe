@@ -1,6 +1,5 @@
 import { ResponsiveRadar } from '@nivo/radar'
 import React from 'react';
-
 const Tawonechat = () => {
  const data= [
     {
@@ -30,6 +29,8 @@ const Tawonechat = () => {
     }
   ]
   return (
+    <div className="test">
+ 
     <ResponsiveRadar
     data={data}
     keys={[ '정성검사']}
@@ -67,6 +68,7 @@ const Tawonechat = () => {
         }
     ]}
 />
+</div>
   )
 
 }

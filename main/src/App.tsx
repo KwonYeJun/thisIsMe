@@ -12,9 +12,9 @@ function App() {
             <p>This is some content on my website.</p>
           
             <Name />
-            <div className="test">
+           
             <Tawonchat />
-            </div>
+           
           </div>
         </div>
 
