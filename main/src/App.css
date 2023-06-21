@@ -26,6 +26,12 @@ body::before {
   
   background-color: rgba(70, 71, 72, 0.356);
 }
+.example{
+  width: 30%;
+  height: 30%;
+  
+  background-color: rgba(70, 71, 72, 0.356);
+}
 #container{
   width: 100vw;
   height: 100vh;

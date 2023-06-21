@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform } from 'framer-motion';
 import './App.css';
 import Name from './views/ts/name';
 import Tawonchat from './views/ts/tawonchat';
+import TestFram from './testfram'
 
 function App() {
   const x = useMotionValue(0);
@@ -25,6 +26,7 @@ function App() {
             exit={{ opacity: 0, x: 100 }}
             transition={{ duration: 0.5 }}
           >
+            <TestFram />
             <h1>Welcome to My Website</h1>
             <p>This is Me.</p>
             <Name />
