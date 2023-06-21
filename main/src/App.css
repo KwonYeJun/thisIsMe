@@ -20,25 +20,17 @@ body::before {
   z-index: -1;
   content: "";
 }
-.test{
-  width: 30%;
-  height: 30%;
-  
+.box{
+  width: 100%;
+  height: 60%;
   background-color: rgba(70, 71, 72, 0.356);
 }
-.example{
-  width: 30%;
-  height: 30%;
-  
-  background-color: rgba(70, 71, 72, 0.356);
-}
+
 #container{
   width: 100vw;
   height: 100vh;
- 
-}
-#container > :nth-child(1){
-  width: 100%;
-  height: 100%;
-  
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -7,7 +7,7 @@ export default function PageOne() {
 
 
   return (
-    <div className="test">
+    <div className="box">
       
      test3
     </div>
