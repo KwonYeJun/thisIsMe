@@ -1,33 +1,42 @@
 
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { Input } from "./views/components/Input";
+import { AnimatePresence, motion } from 'framer-motion';
+
 
 export default function TestFram() {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
-  const [rotate, setRotate] = useState(0);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  const items = [
+    { id: '1', title: '페이지 1', subtitle: '첫 번째 페이지' },
+    { id: '2', title: '페이지 2', subtitle: '두 번째 페이지' },
+    { id: '3', title: '페이지 3', subtitle: '세 번째 페이지' },
+  ];
 
   return (
-    <div className="example">
-      <div>
+    <div>
+      {items.map(item => (
         <motion.div
-          className="box"
-          animate={{ x, y, rotate }}
-          transition={{ type: "spring" }}
-        />
-      </div>
-      <div className="inputs">
-        <Input value={x} set={setX}>
-          x
-        </Input>
-        <Input value={y} set={setY}>
-          y
-        </Input>
-        <Input value={rotate} set={setRotate} min={-180} max={180}>
-          rotate
-        </Input>
-      </div>
+          key={item.id}
+          layoutId={item.id}
+          onClick={() => setSelectedId(item.id)}
+        >
+          <motion.h5>{item.subtitle}</motion.h5>
+          <motion.h2>{item.title}</motion.h2>
+        </motion.div>
+      ))}
+
+      <AnimatePresence>
+        {selectedId && (
+          <motion.div
+            key={selectedId}
+            layoutId={selectedId}
+          >
+            <motion.h5>{items.find(item => item.id === selectedId)?.subtitle}</motion.h5>
+            <motion.h2>{items.find(item => item.id === selectedId)?.title}</motion.h2>
+            <motion.button onClick={() => setSelectedId(null)}>뒤로 가기</motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
-}
+};
