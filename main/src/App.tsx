@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
-import Name from './views/ts/name';
+// import Name from './views/ts/name';
+import Name from './views/ts/kwon';
+
 import PageOne from './views/ts/pageOne';
 import PageTwo from './views/ts/pageTwo';
 import PageThree from './views/ts/pageThree';
@@ -20,13 +22,13 @@ function App() {
     {
       id: '2',
       title: <PageTwo />,
-      component: <PageTwo />, // 두 번째 페이지 컴포넌트
+      component: <Name />, // 두 번째 페이지 컴포넌트
       style: { x: 30, y: 30 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '3',
       title: <PageThree />,
-      component: <PageThree />, // 세 번째 페이지 컴포넌트
+      component: <Name />, // 세 번째 페이지 컴포넌트
       style: { x: 200, y: 200 }, // 위치를 커스텀하기 위한 스타일 설정
     },
   ];
@@ -42,7 +44,7 @@ function App() {
         >
           <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 ,rotate:[0,180,360]}}
+            animate={{ opacity: 1, x: 0, rotate: [0, 180, 360] }}
             exit={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
           >{item.title}</motion.div>
@@ -53,7 +55,12 @@ function App() {
         {selectedId && (
           <motion.div key={selectedId} layoutId={selectedId}>
             {items.find(item => item.id === selectedId)?.component}
-            <motion.button onClick={() => setSelectedId(null)}>뒤로 가기</motion.button>
+            <motion.button onClick={() => setSelectedId(null)}>
+              <div className="color-changing-div">
+                <div className="color-changing-border">
+                  뒤로 가기
+                </div>
+              </div></motion.button>
           </motion.div>
         )}
       </AnimatePresence>

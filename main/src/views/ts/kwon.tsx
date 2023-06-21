@@ -3,12 +3,13 @@ import { useState } from "react";
 import { AnimatePresence, motion } from 'framer-motion';
 
 
-export default function PageOne() {
+export default function Kwon() {
 
 
   return (
-    <div className="box">
-  Who is Kwon Yejun?
+    <div className="backGray">
+      asdfasdfsadf
+     test1
     </div>
   );
 };
