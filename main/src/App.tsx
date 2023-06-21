@@ -9,7 +9,7 @@ function App() {
         <div id="container">
           <div>
             <h1>Welcome to My Website</h1>
-            <p>This is some content on my website.</p>
+            <p>This is Me.</p>
           
             <Name />
            
