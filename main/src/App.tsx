@@ -15,13 +15,13 @@ function App() {
       id: '1',
       title: <PageOne />,
       component: <Name />, // 첫 번째 페이지 컴포넌트
-      style: { x: 0, y: 0 }, // 위치를 커스텀하기 위한 스타일 설정
+      style: { x: -150, y: -150 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '2',
       title: <PageTwo />,
       component: <PageTwo />, // 두 번째 페이지 컴포넌트
-      style: { x: 100, y: 100 }, // 위치를 커스텀하기 위한 스타일 설정
+      style: { x: 30, y: 30 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '3',
@@ -44,7 +44,7 @@ function App() {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 ,rotate:[0,180,360]}}
             exit={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >{item.title}</motion.div>
         </motion.div>
       ))}
