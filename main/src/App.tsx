@@ -17,19 +17,19 @@ function App() {
       id: '1',
       title: <PageOne />,
       component: <Name />, // 첫 번째 페이지 컴포넌트
-      style: { x: -150, y: -150 }, // 위치를 커스텀하기 위한 스타일 설정
+      style: { x: -450, y: -270 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '2',
       title: <PageTwo />,
       component: <Name />, // 두 번째 페이지 컴포넌트
-      style: { x: 30, y: 30 }, // 위치를 커스텀하기 위한 스타일 설정
+      style: { x: -370, y: -170 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '3',
       title: <PageThree />,
       component: <Name />, // 세 번째 페이지 컴포넌트
-      style: { x: 200, y: 200 }, // 위치를 커스텀하기 위한 스타일 설정
+      style: { x: -600, y: -100 }, // 위치를 커스텀하기 위한 스타일 설정
     },
   ];
 
