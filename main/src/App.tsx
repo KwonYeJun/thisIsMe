@@ -5,7 +5,7 @@ import './App.css';
 // import Name from './views/ts/name';
 import FirstPage from './views/ts/kwon';
 import SecondPage from './views/ts/project';
-import ThirddPage from './views/ts/kwon';
+import ThirddPage from './views/ts/pastime';
 
 
 import PageOne from './views/ts/pageOne';
@@ -31,7 +31,7 @@ function App() {
     {
       id: '3',
       title: <PageThree />,
-      // component: <Name />, // 세 번째 페이지 컴포넌트
+      component: <ThirddPage />, // 세 번째 페이지 컴포넌트
       style: { x: -600, y: -100 }, // 위치를 커스텀하기 위한 스타일 설정
     },
   ];
