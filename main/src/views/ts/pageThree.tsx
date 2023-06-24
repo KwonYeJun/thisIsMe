@@ -8,8 +8,7 @@ export default function PageOne() {
 
   return (
     <div className="box">
-      
-     test3
+    Work in progress
     </div>
   );
 };

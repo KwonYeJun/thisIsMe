@@ -8,8 +8,7 @@ export default function PageOne() {
 
   return (
     <div className="box">
-      
-     test2
+      it`s me pastime
     </div>
   );
 };
