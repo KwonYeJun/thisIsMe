@@ -3,7 +3,10 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
 // import Name from './views/ts/name';
-import Name from './views/ts/kwon';
+import FirstPage from './views/ts/kwon';
+import SecondPage from './views/ts/project';
+import ThirddPage from './views/ts/kwon';
+
 
 import PageOne from './views/ts/pageOne';
 import PageTwo from './views/ts/pageTwo';
@@ -16,19 +19,19 @@ function App() {
     {
       id: '1',
       title: <PageOne />,
-      component: <Name />, // 첫 번째 페이지 컴포넌트
+      component: <FirstPage />, // 첫 번째 페이지 컴포넌트
       style: { x: -450, y: -270 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '2',
       title: <PageTwo />,
-      component: <Name />, // 두 번째 페이지 컴포넌트
+      component: <SecondPage />, // 두 번째 페이지 컴포넌트
       style: { x: -370, y: -170 }, // 위치를 커스텀하기 위한 스타일 설정
     },
     {
       id: '3',
       title: <PageThree />,
-      component: <Name />, // 세 번째 페이지 컴포넌트
+      // component: <Name />, // 세 번째 페이지 컴포넌트
       style: { x: -600, y: -100 }, // 위치를 커스텀하기 위한 스타일 설정
     },
   ];
