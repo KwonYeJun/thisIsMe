@@ -18,7 +18,7 @@ export default function Project() {
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 1.5 }}
         >
-        <img src="../img/poke X digi.png" className="logo" />
+        <img src="../img/poke.png" className="logo" />
         </motion.div>
         <br />
         <motion.div

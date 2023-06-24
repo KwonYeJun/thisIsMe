@@ -12,7 +12,7 @@ export default function Pastime() {
       </div>
       <div>
         <div className="video-container">
-          <video width="80%" height="20%" controls autoPlay>
+          <video width="100%" height="350px" controls autoPlay>
             <source src="../img/keysound.mp4" type="video/mp4" />
             {/* 다른 형식의 비디오를 지원하려면 여기에 추가 source 태그를 작성하세요 */}
           </video>
