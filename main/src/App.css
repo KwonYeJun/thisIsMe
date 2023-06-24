@@ -65,7 +65,14 @@ body::-webkit-scrollbar {
   width: 48%;
   height: 85%;
   text-align: center;
+  overflow: auto;
   background-color: rgb(31, 158, 158);
+}
+.textdiv::-webkit-scrollbar {
+  display: none;
+  overflow-y: scroll;
+  overflow-x: scroll;
+
 }
 #container {
   position: relative;
