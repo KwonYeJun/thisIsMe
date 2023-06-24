@@ -18,8 +18,12 @@ export default function Kwon() {
 
   return (
     <div className="kwonpage">
-      <div className="textdiv">asd</div>
-      <div className="imgdiv"> <img src={images[currentImage]} /></div>
+      <div className="textdiv">
+        
+      </div>
+
+      <img src={images[currentImage]} className="imgdiv" />
+
 
     </div>
   );

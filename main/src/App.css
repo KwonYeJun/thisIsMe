@@ -51,11 +51,21 @@ body::-webkit-scrollbar {
   width: 65vw;
   height: 65vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   background-color: rgba(70, 71, 72, 0.356);
 }
 .imgdiv{
-  width: 45%;
-  height: 80%;
+  width: 48%;
+  height: 85%;
+
+}
+.textdiv{
+  width: 48%;
+  height: 85%;
+  text-align: center;
+  background-color: rgb(31, 158, 158);
 }
 #container {
   position: relative;
