@@ -61,7 +61,7 @@ function App() {
             <motion.button onClick={() => setSelectedId(null)}>
               <div className="color-changing-div">
                 <div className="color-changing-border">
-                  뒤로 가기
+                  뒤로
                 </div>
               </div></motion.button>
           </motion.div>
