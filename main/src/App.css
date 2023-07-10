@@ -12,8 +12,8 @@ body::before {
   /* 화면 너비에 맞추기 */
   height: 100vh;
   /* 화면 높이에 맞추기 */
-  background-image: url('./views/img/rawbow.jpg');
-  background-size: cover;
+  /* background-image: url('./views/img/rawbow.jpg'); */
+  /* background-size: cover; */
   /* 배경 이미지를 화면에 맞게 조정 */
   background-position: center;
   /* 배경 이미지를 가운데 정렬 */
@@ -67,12 +67,12 @@ body::-webkit-scrollbar {
   flex-direction: column;
   background-color: rgba(70, 71, 72, 0.356);
 }
-.video-container{
+/* .video-container{
   display: flex;
   justify-content: center;
   align-items: center;
 
-}
+} */
 
 .imgdiv {
   width: 48%;
@@ -127,6 +127,7 @@ span {
   height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 3;
   justify-content: center;
 }
 
@@ -135,4 +136,5 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }

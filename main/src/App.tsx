@@ -6,7 +6,7 @@ import './App.css';
 import FirstPage from './views/ts/kwon';
 import SecondPage from './views/ts/project';
 import ThirddPage from './views/ts/pastime';
-
+import ReactPlayer from 'react-player'
 
 import PageOne from './views/ts/pageOne';
 import PageTwo from './views/ts/pageTwo';
@@ -37,6 +37,7 @@ function App() {
   ];
 
   return (
+
     <div id='container'>
       {items.map(item => (
         <motion.div
@@ -54,12 +55,12 @@ function App() {
         </motion.div>
       ))}
 
-      <AnimatePresence>
+      <AnimatePresence >
         {selectedId && (
           <motion.div key={selectedId} layoutId={selectedId}>
             {items.find(item => item.id === selectedId)?.component}
             <motion.button onClick={() => setSelectedId(null)}>
-              <div className="color-changing-div">
+              <div className="color-changing-div" style={{ position: 'absolute', zIndex: 1 }} >
                 <div className="color-changing-border">
                   뒤로
                 </div>
@@ -67,6 +68,18 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+      <ReactPlayer
+        url={"https://youtu.be/UxpjpxLi-Qg"}
+        width="100vw"
+        height="100vh"
+        loop={true}
+        playing={true}
+        muted={true}
+        controls={false}
+        style={{ position: 'absolute', zIndex: -1, pointerEvents: 'none' }}
+      />
+
+
     </div>
   );
 }
