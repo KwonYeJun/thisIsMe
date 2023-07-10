@@ -59,24 +59,23 @@ function App() {
         {selectedId && (
           <motion.div key={selectedId} layoutId={selectedId}>
             {items.find(item => item.id === selectedId)?.component}
-            <motion.button onClick={() => setSelectedId(null)}>
-              <div className="color-changing-div" style={{ position: 'absolute', zIndex: 1 }} >
-                <div className="color-changing-border">
-                  뒤로
-                </div>
-              </div></motion.button>
+            <motion.button onClick={() => setSelectedId(null)} className="color-changing-div">
+
+                  backPage
+              </motion.button>
           </motion.div>
         )}
       </AnimatePresence>
       <ReactPlayer
-        url={"https://youtu.be/UxpjpxLi-Qg"}
-        width="100vw"
-        height="100vh"
+        url={"../img/testback.mp4"}
+        width="1920px"
+        height="1080px"
         loop={true}
         playing={true}
         muted={true}
         controls={false}
-        style={{ position: 'absolute', zIndex: -1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', zIndex: -1, pointerEvents: 'none' , filter: "blur(2.5px)",  backgroundSize: "cover"
+        ,backgroundPosition: "center"}}
       />
 
 

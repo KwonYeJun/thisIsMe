@@ -4,27 +4,6 @@
   box-sizing: border-box;
 }
 
-body::before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  /* 화면 너비에 맞추기 */
-  height: 100vh;
-  /* 화면 높이에 맞추기 */
-  /* background-image: url('./views/img/rawbow.jpg'); */
-  /* background-size: cover; */
-  /* 배경 이미지를 화면에 맞게 조정 */
-  background-position: center;
-  /* 배경 이미지를 가운데 정렬 */
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  z-index: -1;
-  content: "";
-}
 
 body::-webkit-scrollbar {
   display: none;
@@ -40,8 +19,6 @@ body::-webkit-scrollbar {
   width: 130%;
   height: 100%;
   color: white;
-  /* border: black 3px solid; */
-  /* border-radius: 10px; */
 
   background-color: rgba(70, 71, 72, 0.356);
 }
@@ -67,12 +44,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   background-color: rgba(70, 71, 72, 0.356);
 }
-/* .video-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-} */
 
 .imgdiv {
   width: 48%;
@@ -124,10 +96,11 @@ span {
 
 #container {
   position: relative;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 3;
+
   justify-content: center;
 }
 
@@ -136,5 +109,5 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+
 }
